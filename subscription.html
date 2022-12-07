@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription</title>
+    <link rel="stylesheet" href="subscription.css">
+    <script src="subscription.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="left_box" class="left_box">
+            <h1>Subscription</h1>
+            <form action="" method="get" >
+                <div class="name_input">
+                    <h2 id="header1">ID:</h2>
+                    <input type="text" class="id_text" id="id_text" placeholder="Required and must be 8-12 alphanumeric characters">
+                </div>
+                <div class="pass_input">
+                    <h2 id="header2">Password:</h2>
+                    <input type="password" class="pass_text" id="pass_text" autocapitalize="current-password" placeholder="Required and must be 8-10 characrters">
+                </div>
+                <div class="email_input">
+                    <h2 id="header3">Name:</h2>
+                    <input type="text" class="name_text" id="name_text" placeholder="Required and must be alphanbetic characters">
+                </div>
+            </form>
+        </div>
+        <div id="right_box" class="right_box">
+            <form action="" method="get" >
+                <div class="name_input">
+                    <h2 id="header4">Family:</h2>
+                    <input type="text" class="family_text" id="family_text" placeholder="Required and must be alphabetic characters">
+                </div>
+                <div class="surname_input">
+                    <h2 id="header5">Phone Number:</h2>
+                    <input type="text" class="phone_text" id="phone_text" placeholder="Required and must be 10 Numeric characters">
+                </div>
+                <div class="email_input">
+                    <h2 id="header6">Email:</h2>
+                    <input type="text" class="email_text" id="email_text" placeholder="Required and must be valid email">
+                </div>
+            </form>
+        </div>
+        <div>
+            <form action="" method="get">
+                <input type="submit" onclick="control()" value="SUBMIT" id="sub_butt" class="sub_butt">
+            </form>
+        </div>
+    </div> 
+</body>
+</html>

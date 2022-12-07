@@ -1,0 +1,249 @@
+body {
+    background: url(mavi1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*LEFT BOX*/
+.left_box {
+    background-color: white;
+    top: 15%;
+    right: 49%;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 7px 15px black;
+    border-radius: 50px 15px 50px 15px;
+    display: inline-block;
+    color: gray;
+    text-align: center;
+    transform: skewY(350deg);
+    position: absolute;
+    padding: 10px;
+}
+.left_box:hover {
+    transition: 1s;
+    transform: translate(-50px,37px);
+    border-radius: 15px 15px 15px 15px;
+}
+/*RIGHT BOX*/
+.right_box {
+    background-color: white;
+    top: 15%;
+    right: 29%;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0px 7px 15px black;
+    border-radius: 50px 15px 50px 15px;
+    color: gray;
+    text-align: center;
+    transform: skewY(350deg);
+    position: absolute;
+    padding: 10px;
+}
+.right_box:hover {
+    transition: 1s;
+    transform: translate(50px,-37px);
+    border-radius: 15px 15px 15px 15px;
+}
+/*RESPONSIVE*/
+@media screen and (max-width: 1470px){
+    .right_box {
+        transition: 1s;
+        right: 22.5%;
+    }
+    .sub_butt {
+        transition: 1s;
+        left: 39%;
+    }
+  }
+@media screen and (max-width: 1150px){
+    .right_box {
+        transition: 1s;
+        right: 15.5%;
+    }
+    .sub_butt {
+        transition: 1s;
+        left: 35%;
+    }
+  }
+@media screen and (max-width: 900px){
+    .left_box {
+        transition: 1s;
+        left: 25%;
+    }
+    .right_box {
+        transition: 2s;
+        left: 25%;
+        top: 670px;
+    }
+    .sub_butt {
+        transition: 1s;
+        margin-top: 520px;
+        right: 50%;
+    }
+  }
+@media screen and (max-width: 500px){
+    .left_box {
+        top: 5%;
+        width: 300px;
+        height: 450px;
+        transition: 1s;
+        left: 17%;
+    }
+    .left_box:hover {
+        transition: 1s;
+        transform: translate(0,-37px);
+        border-radius: 15px 15px 15px 15px;
+    }
+    .right_box {
+        width: 300px;
+        height: 400px;
+        transition: 2s;
+        left: 17%;
+        top: 530px;
+    }
+    .right_box:hover {
+        transition: 1s;
+        transform: translate(0,37px);
+        border-radius: 15px 15px 15px 15px;
+    }
+    .sub_butt {
+        transition: 1s;
+        margin-top: 260px;
+        left: 19%;
+    }
+    h1 {
+        font-size: 22px;
+        padding-bottom: 20px;
+    }
+    #header1,
+    #header2,
+    #header3,
+    #header4,
+    #header5,
+    #header6 {
+        font-size: 18px;
+    }
+  }
+/*HEADERS*/
+h1 {
+    font-family: Segoe Print;
+    color: #fff;
+    text-shadow:
+    0 0 3px rgb(0, 204, 255),
+    0 0 7px rgb(0, 204, 255),
+    0 0 11px rgb(0, 204, 255),
+    0 0 21px rgb(0, 204, 255),
+    0 0 32px rgb(0, 204, 255),
+    0 0 42px rgb(0, 204, 255);
+    animation: flicker 1.5s infinite alternate;
+    padding-bottom: 30px;
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+        0 0 3px rgb(2, 174, 218),
+        0 0 7px rgb(2, 174, 218),
+        0 0 11px rgb(2, 174, 218),
+        0 0 21px rgb(2, 174, 218),
+        0 0 32px rgb(2, 174, 218),
+        0 0 42px rgb(2, 174, 218);
+    }
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }
+  }
+  
+#header1 {
+    font-family: MV Boli;
+    margin-right: 224px;
+    padding-top: 10px;
+}
+#header2 {
+    font-family: MV Boli;
+    margin-right: 133px;
+    padding-top: 20px;
+}
+#header3 {
+    font-family: MV Boli;
+    margin-right: 182px;
+    padding-top: 20px;
+}
+#header4 {
+    font-family: MV Boli;
+    margin-right: 171px;
+    padding-top: 50px;
+}
+#header5 {
+    font-family: MV Boli;
+    margin-right: 78px;
+    padding-top: 20px;
+}
+#header6 {
+    font-family: MV Boli;
+    margin-right: 183px;
+    padding-top: 20px;
+}
+/*INPUTS*/
+.id_text,
+.pass_text,
+.name_text,
+.family_text,
+.phone_text,
+.email_text {
+    position: relative;
+    color: gray;
+    border: none;
+    font-size: 18px;
+    width: 250px;
+    border-bottom: 3px solid rgb(0, 204, 255);
+    border-radius: 3px;
+}
+::placeholder{
+    color: rgb(175, 175, 175);
+    font-size: 10.5px;
+}
+.id_text:hover,
+.pass_text:hover,
+.name_text:hover,
+.family_text:hover,
+.phone_text:hover,
+.email_text:hover {
+    transition: 0.5s;
+    border-bottom: 4px solid rgb(221, 122, 75);
+    border-radius: 3px;
+}
+.id_text:focus,
+.pass_text:focus,
+.name_text:focus,
+.family_text:focus,
+.phone_text:focus,
+.email_text:focus {
+    outline: none;
+    border-radius: 3px;
+    border-bottom: 4px solid rgb(221, 122, 75);
+    border-image-slice: 1;
+}
+/*BUTTON*/
+.sub_butt {
+    top: 81%;
+    right: 43%;
+    position: absolute;
+    color: #ffffff;
+    font-family: MV Boli;
+    width: 300px;
+    height: 55px;
+    border: none;
+    background: rgb(221, 122, 75);
+    box-shadow: 0 0px 20px black;
+    display: inline-block;
+    border-radius: 30px;
+    
+}
+.sub_butt:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    background-color: rgb(24, 24, 66);
+    box-shadow: 0px 7px 15px black;
+}
